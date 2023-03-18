@@ -1,0 +1,239 @@
+
+
+/** HERO SECTION **/
+/** HERO SECTION **/
+/** HERO SECTION **/
+/** HERO SECTION **/
+
+.hero-section{
+  color: white;
+  padding: 20px;
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.6s, color 0.6s;
+}
+
+.hero-section.active{
+  background: var(--secondary-white);
+  /* color: black; */
+}
+
+.description_section{
+  padding-top: 100px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section h3{
+  font-weight: normal;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.hero-section h1{
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+
+.hero-section p {
+  color: rgb(149, 143, 143);
+  margin-bottom: 5px;
+}
+
+
+.wrapper {
+  color: #ccc;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .static-txt {
+  color: white;
+  font-size: 20px;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 10px;
+  line-height: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.wrapper .dynamic-txts li {
+  color: blue;
+  font-size: 20px;
+  position: relative;
+}
+
+.wrapper .dynamic-txts li {
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+.wrapper .dynamic-txts li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid blue;
+  animation: typing 3s steps(10) infinite;
+  background: black;
+}
+
+.wrapper .dynamic-txts li.active::after{
+  background: var(--secondary-white)
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 2px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -200px;
+  }
+}
+
+
+.email-btn{
+  display: flex;
+  align-items: center;
+  background: #ccc;
+  width: 78%;
+  max-width: 480px;
+  min-width: 250px;
+  border-radius: 60px;
+  outline: none;
+  height: 3.2rem;
+}
+
+.email-btn input{
+  width: 70%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  outline: none;
+  border: 0;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.email-btn button{
+  width: 30%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 0;
+  height: 100%;
+  background: var(--primary-blue);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.image_section{
+  width: 50%;
+  min-width: 500px;
+  height: 100%;
+}
+
+.image_section img{
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+/*** HERO SECTION RESPONSIVENESS ***/
+/*** HERO SECTION RESPONSIVENESS ***/
+/*** HERO SECTION RESPONSIVENESS ***/
+/*** HERO SECTION RESPONSIVENESS ***/
+
+
+@media screen and (max-width: 1040px){
+
+  .hero-section{
+    padding-top: 100px;
+  }
+
+
+  .description_section{
+    padding-top: 110px;
+    width: 100%;
+  }
+
+  .image_section{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 640px){
+  .hero-section h1{
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 485px){
+  .hero-section h1{
+    font-size: 2.4rem;
+  }
+
+  .email-btn{
+    height: 3rem;
+  }
+
+  .email-btn input{
+    font-size: 1rem;
+  }
+
+  .email-btn button{
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 415px){
+  .hero-section h3{
+    font-size: 1rem;
+  }
+
+  .hero-section h1{
+    font-size: 2rem;
+  }
+
+  .email-btn{
+    height: 2.3rem;
+  }
+
+  .email-btn input{
+    font-size: .9rem;
+  }
+
+  .email-btn button{
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .hero-section h1{
+    font-size: 1.7rem;
+  }
+}
+

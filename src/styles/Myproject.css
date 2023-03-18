@@ -1,0 +1,240 @@
+
+/*** MY PROJECTS ***/
+/*** MY PROJECTS ***/
+/*** MY PROJECTS ***/
+/*** MY PROJECTS ***/
+
+.my-projects{
+  background: var(--secondary-white);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+  transition: background 0.8s;
+}
+
+.my-projects.active{
+  background: black;
+}
+
+.my-projects > h1{
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.my-projects > p{
+  color: #ccc;
+}
+
+.view_project_btn{
+  padding: 10px 13px;
+  border-radius: 15px;
+  border: 0;
+  background: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.projects_container{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.345);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.projects_container_inner{
+  width: 40%;
+  height: 90%;
+  background: white;
+  border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.close_project{
+  position: fixed;
+  top: 14%;
+  right: 31%;
+  width: 20px;
+  font-weight: 600;
+  background: rgb(100, 100, 100);
+  z-index: 11;
+  color: white;
+  cursor: pointer;
+}
+
+.projects_container_inner::-webkit-scrollbar {
+  display: none;
+}
+
+.individual_project{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(230, 227, 227);
+  transition: background 0.5s ease;
+}
+
+.individual_project:hover{
+  background: #0c0c0c44;
+}
+
+.individual_project:not(:last-child){
+  border-bottom: 1px solid rgba(153, 150, 150, 0.49);
+}
+
+.individual_project > p{
+  color: rgb(49, 48, 48);
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.individual_project .image_container{
+  width: 50%;
+  height: 40%;
+  margin: 5px auto;
+}
+
+.individual_project .image_container img{
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.view_project_container{
+  width: 100%;
+  height: 50px;
+  background: rgba(5, 5, 5, 0.216);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.view_project_container .live_site_container{
+  color: black;
+}
+
+.source_code_container{
+  background-color: rgb(90, 88, 88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+.live_site_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+
+
+/*** MY PROJECT RESPONSIVENESS ***/
+/*** MY PROJECT RESPONSIVENESS ***/
+/*** MY PROJECT RESPONSIVENESS ***/
+/*** MY PROJECT RESPONSIVENESS ***/
+
+@media screen and (max-width: 1040px){
+  .projects_container_inner{
+    width: 50%;
+  }
+
+  .close_project{
+    position: fixed;
+    top: 14%;
+    right: 26%;
+  }
+
+}
+
+@media screen and (max-width: 780px){
+  .projects_container_inner{
+    width: 60%;
+  }
+
+  .close_project{
+    position: fixed;
+    top: 14%;
+    right: 21%;
+  }
+
+}
+
+@media screen and (max-width: 660px){
+  .projects_container_inner{
+    width: 70%;
+  }
+
+  .close_project{
+    position: fixed;
+    top: 14%;
+    right: 16%;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  .my-projects > h1{
+    font-size: 2rem;
+  }
+
+  .my-projects > p{
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .projects_container_inner{
+    width: 80%;
+  }
+
+  .individual_project > p{
+    font-size: 1rem;
+  }
+
+  .close_project{
+    position: fixed;
+    top: 14%;
+    right: 11%;
+  }
+
+}
+
+@media screen and (max-width: 360px){
+  .projects_container_inner{
+    width: 90%;
+  }
+
+  .close_project{
+    position: fixed;
+    top: 14%;
+    right: 6%;
+  }
+
+}

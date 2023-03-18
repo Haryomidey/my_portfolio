@@ -1,0 +1,121 @@
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: rgb(31, 30, 30);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  z-index: 111;
+}
+
+.navbar nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.navbar nav h1{
+  font-size: 1.7rem;
+  color: white;
+}
+
+.nav-element{
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: var(--black);
+  padding-top: 30px;
+  padding-left: 15px;
+  transition: left 0.5s;
+  box-shadow: 0 1px 4px 1px rgb(101, 100, 100);
+}
+
+.nav-element.active{
+  left: 0%;
+}
+
+.nav-element li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-element li a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.nav-element li a:hover{
+  color: var(--primary-blue);
+}
+
+.nav-element .close{
+  position: absolute;
+  right: 10%;
+  color: white;
+}
+
+.mode-open{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(197, 195, 195);
+}
+
+.mode-open span{
+  cursor: pointer;
+}
+
+.light{
+  color: white;
+}
+
+.dark{
+  color: #a7a7a7;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/**** NAVBAR RESPONSIVENESS ****/
+/**** NAVBAR RESPONSIVENESS ****/
+/**** NAVBAR RESPONSIVENESS ****/
+/**** NAVBAR RESPONSIVENESS ****/
+
+@media screen and (min-width: 921px){
+  .open{
+    display: none;
+  }
+  .nav-element{
+    position: initial;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: transparent;
+    transition: left 0.5s;
+    box-shadow: none;
+    padding-top: 0px;
+    padding-left: 150px;
+    margin-right: 10px;
+  }
+  .nav-element .close{
+  display: none;
+}
+
+}
