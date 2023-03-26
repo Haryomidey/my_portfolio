@@ -20,9 +20,9 @@ function Footer({darkMode}) {
         </div>
         <p className='footer-p'> &copy; Oladiipo Ayanlekan Ayomide with react - 2023</p>
         <div className='social-media-icon'>
-            <a href="https://twitter.com/Ayotech11?t=3MuYOQtW5ads4XLLTUcrQw&s=09">
+            {/* <a href="https://twitter.com/Ayotech11?t=3MuYOQtW5ads4XLLTUcrQw&s=09">
                 <i className="fa-brands fa-twitter"></i>
-            </a>
+            </a> */}
             <a href="https://www.facebook.com/profile.php?id=100082080325504">
                 <i className="fa-brands fa-facebook"></i>
             </a>

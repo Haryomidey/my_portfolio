@@ -1,10 +1,3 @@
-
-
-/** HERO SECTION **/
-/** HERO SECTION **/
-/** HERO SECTION **/
-/** HERO SECTION **/
-
 .hero-section{
   color: white;
   padding: 20px;
@@ -19,7 +12,6 @@
 
 .hero-section.active{
   background: var(--secondary-white);
-  /* color: black; */
 }
 
 .description_section{
