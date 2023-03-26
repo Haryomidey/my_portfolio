@@ -23,15 +23,15 @@ function Footer({darkMode}) {
             {/* <a href="https://twitter.com/Ayotech11?t=3MuYOQtW5ads4XLLTUcrQw&s=09">
                 <i className="fa-brands fa-twitter"></i>
             </a> */}
-            <a href="https://www.facebook.com/profile.php?id=100082080325504">
+            <a href="https://www.facebook.com/profile.php?id=100082080325504" target = "_blank">
                 <i className="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=+2348130771867&text=Hello%20"><i
+            <a href="https://api.whatsapp.com/send?phone=+2348130771867&text=Hello%20" target = "_blank"><i
                 className="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/oladiipo-ayomide-059a04247">
+            <a href="https://www.linkedin.com/in/oladiipo-ayomide-059a04247" target = "_blank">
                 <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://github.com/Haryomidey">
+            <a href="https://github.com/Haryomidey" target = "_blank">
                 <i className="fa-brands fa-github"></i>
             </a>
         </div>
